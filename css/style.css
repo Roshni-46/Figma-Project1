@@ -1,0 +1,387 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul,li{
+    list-style: none;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.align-center{
+    align-items: center;
+}
+.align-end{
+    align-items: flex-end;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+:root{
+    --main-clr:#F8991C;
+    --second-clr:#000000;
+
+}
+/* basic css ends here */
+/* common parts starts here */
+.button{
+   
+        background: var(--main-clr);
+        color: white;
+        padding: 12px 40px;
+        display:inline-block;
+        border-radius: 6px;
+        margin-top: 35px;
+        font-weight: 600;
+        text-transform: capitalize;
+   transition: 0.3s;
+   
+}
+
+.heading{
+    font-weight: 700;
+font-size: 16px;
+color: var(--main-clr);
+text-transform:uppercase;
+}
+.sub-heading{
+    font-weight: 600;
+font-size: 28px;
+color: var(--second-clr);
+text-transform: uppercase;
+}
+/* nav starts here */
+#nav .logo{
+    width: 30%;
+}
+#nav .menu{
+    width: 70%;
+}
+#nav .menu ul{
+    text-align: right;
+}
+#nav .menu ul li{
+    display: inline-block;
+}
+#nav .menu ul li a{
+    font-weight: 400;
+font-size: 14px;
+display: block;
+padding: 45px 30px;
+color: black;
+text-transform: uppercase;
+transition: .3s;
+}
+#nav .menu ul li:hover a{
+    color: var(--main-clr);
+}
+/* nav ends here */
+/* banner starts here */
+#banner{
+    background-color: #F8F8F8;
+    min-height: 660px;
+    position: relative;
+}
+#banner .row{
+    height: 660px;
+}
+#banner .banner-cnt{
+    width: 60%;
+}
+#banner .banner-img{
+    width: 40%;
+}
+#banner .banner-cnt h3{
+    font-weight: 400;
+    font-size: 28px;
+    color: black;
+}
+#banner .banner-cnt h1{
+    font-weight: 700;
+font-size: 45px;
+color: black;
+}
+#banner .banner-cnt p{
+    font-weight: 400;
+font-size: 28px;
+color: black;
+}
+#banner .banner-cnt a{
+    display: inline-block;
+    color: white;
+    background-color: var(--main-clr);
+    padding: 15px 22px;
+   font-weight: 400;
+   border-radius: 8px;
+   margin: 15px 0;
+   transition: 0.3s;
+}
+#banner .banner-cnt:hover a{
+    background-color:black;
+    color:white;
+}
+#banner .banner-links{
+    position: absolute;
+    bottom: 80px;
+  }
+#banner .banner-links ul{
+  margin-left: 115px;
+  
+}
+
+#banner .banner-links ul li{
+    display: inline-block;
+   
+}
+#banner .banner-links ul li a{
+    display: inline-block;
+    color: #3F729B;
+    font-size: 24px;
+}
+#banner .banner-links p{
+    font-weight: 400;
+font-size: 16px;
+color: black;
+text-transform: capitalize;
+}
+/* banner ends here */
+/* about starts here */
+#about{
+    padding: 70px 0;
+}
+#about .about-img{
+    width: 40%;
+}
+#about .about-text{
+    width: 60%;
+}
+#about .about-text p{
+    font-weight: 500;
+font-size: 16px;
+color: var(--second-clr);
+line-height: 22px;
+padding: 40px 0;
+
+
+}
+#about .about-text a{
+    text-transform: uppercase;
+}
+
+#about .about-text .button:last-child{
+    background-color: transparent;
+    border: 1px solid var(--main-clr);
+    color: black;
+    margin-left: 50px;
+  }
+#about .abt-img{
+  margin-left: 457px;
+   padding: 50px 0;
+}
+/* about sec ends here */
+/* specialize starts here */
+#specialize{
+    background-color: #F8F8F8;
+}
+#specialize .specialize-head{
+    padding: 50px 0;
+}
+#specialize .specialize-card{
+    width: calc(33.33% - 60px);
+    margin: 0 30px;
+    text-align: center;
+    padding-bottom: 50px;
+ 
+}
+#specialize .specialize-card h3{
+    font-weight: 600;
+    Font-size: 28px;
+    color: var(--main-clr);
+    
+}
+#specialize .specialize-card p{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--second-clr);
+    padding: 20px 0;
+
+}
+
+
+#specialize .specialize-card:first-child{
+    margin-top: -14px;
+}
+/* specialize ends here */
+/* my education starts here */
+#education{
+    padding: 70px 0;
+ 
+
+}
+#education .education-head{
+    padding: 50px 0;
+}
+#education .education-card{
+    width: calc(33.33% - 26px);
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    padding: 38px 21px;
+    text-align: center;
+    margin:72px 13px ;
+}
+.education-card h4{
+   color: #000000; 
+font-size: 18px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+padding-bottom: 21px;
+}
+.education-card .cal {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    padding-bottom: 24px;
+    
+}
+
+.education-card p{
+    font-family: Open Sans;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+padding-bottom: 7px;
+color: #000000;
+
+}
+.education-card span{
+    color: #F8991C;
+font-size: 30px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+
+
+
+}
+/* education ends here */
+/* portfoliuo starts here */
+#port{
+    padding: 70px 0;
+    background-color: #F8F8F8;
+}
+#port .port-head{
+    padding: 50px 0;
+}
+#port .port-card{
+    width: calc(25% - 12px);
+    margin: 0 6px;
+    padding-bottom: 50px;
+}
+#port .port-card img{
+    width: 100%;
+    display: block;
+}
+/* port ends here */
+/* testimonial starts here */
+#test{
+    padding: 70px 0;
+    
+}
+#test .test-head{
+    padding-top: 50px;
+}
+#test .test-card{
+    width: calc(50% - 36px);
+    margin: 50px 18px;
+    background-color: white;
+    padding: 25px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+#test .test-card .test-img{
+    width: 20%;
+    
+}
+#test .test-card .test-img img{
+    width: 100%;
+    display: block;
+}
+#test .test-card .test-text{
+    width: 80%;
+   padding-left: 12px;
+}
+
+#test .test-card .test-text h3{
+    font-size: 28px;
+    font-weight: 500;
+    color: #000000;
+}
+#test .test-card .test-text p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    text-transform: capitalize;
+}
+#test .test-card p{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--second-clr);
+   padding-top: 15px;
+    line-height: 22px;
+    text-align: justify;
+}
+/* testimonial ends here */
+/* my blog starts here */
+#blog{
+    background-color: #F8F8F8;
+   padding-bottom: 50px;
+}
+#blog .blog-card{
+    width: calc(33.33% - 30px);
+    margin: 0 15px;
+    text-align: center;
+    background-color: white;
+}
+#blog .blog-card h3{
+    padding-top:10px ;
+    color: #000000;
+    font-size: 15px;
+    font-weight: 600;
+
+}
+.blog-head{
+   padding: 50px 0;
+}
+#blog .blog-card p{
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #000000;
+    text-align: justify;
+    word-spacing: 3px;
+    
+}
+#blog .blog-card img{
+    width: 100%;
+}
+#blog .blog-card a{
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    padding: 20px 0;
+}
